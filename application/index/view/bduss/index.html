@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="zh-cn">
+<head>
+	{include file='common/header' /}
+	{include file='common/css' /}
+	<!-- <link rel="stylesheet" href=""> -->
+	<title>添加 BDUSS</title>
+</head>
+
+<body>
+	<div class="scr">
+		<div class="top-title panel panel-primary">
+			<div class="panel-heading">
+				<h3 class="panel-title">知道免费抽奖添加BDUSS</h3>
+			</div>
+			<div class="top-content panel-body">
+				<form >
+					<input type="text" class="form-control" name="bduss" id="bduss" placeholder="在这里输入BDUSS">
+					<button type="submit" name="submit" class="btn btn-primary btn-block">提交</button>
+				</form>
+				<div class="top-end"><a href="#" target="view_window">有问题？</a>
+					<a href="__ROOT__/index/bduss/update" class="xiugai" target="view_window">更新BDUSS</a>
+					<a href="http://www.copyfu.com/" class="right" target="view_window">更多体验>></a>
+				</div>
+			</div>
+		</div>
+	</div>
+	{include file='common/js' /}
+	<script src='__jq__/jquery-2.2.3.min.js'></script>
+	<script src='__layer__/layer.js'></script>
+	<script src='__JS__/addBduss.js'></script>
+	{include file='common/footer' /}
+</body>
+</html>

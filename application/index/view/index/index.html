@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="zh-cn">
+<head>
+	{include file='common/header' /}
+	<title>查看中奖结果</title>
+	<link rel="stylesheet" href="__CSS__/read_result.css">
+	<link rel="stylesheet" href="__CSS__/amazeui.min.css">
+</head>
+
+<body>
+	<div class="container">
+		<form class="am-form am-g line">
+			<div class="am-u-sm-9">
+				<input class="am-form-field am-input-lg" type="text" name="username" id="username"  placeholder="输入用户名查看抽奖结果">
+			</div>
+  			<div class="am-u-sm-3">
+  				<button type="submit"  name="submit" class="am-btn am-btn-lg am-btn-block am-btn-primary am-radius">查看</button>
+  			</div>
+			<label class="days">选择查询数量：
+				<span class="select"><input type="radio" name="selectTimes" value="10" checked>前十次</span>
+				<span class="select"><input type="radio" name="selectTimes" value="30" >前30次</span>
+				<span class="select"><input type="radio" name="selectTimes" value="-1" >所有结果</span>
+			</label>
+		</form>
+		<div class="none"></div>
+		<div class="listGoods"></div>
+	<!-- {include file='common/footer'} -->
+		
+	</div>
+
+	{include file='common/js' /}
+	<script src='__jq__/jquery-2.2.3.min.js'></script>
+	<script src='__layer__/layer.js'></script>
+	<script src='__JS__/index.js'></script>
+
+</body>
+</html>
